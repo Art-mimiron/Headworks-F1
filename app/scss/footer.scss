@@ -1,0 +1,66 @@
+.footer {
+    min-height: 270px;
+    background-color: #333333;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__about {
+        margin-top: 42px;
+        width: 436px;
+        height: 152px;
+    }
+    &__logo {
+        height: 56px;
+        width: 120px;
+        img {
+            height: 56px;
+        }
+    }
+    &__descr {
+        margin-top: 30px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+        color: #E0E0E0;
+    }
+    &__nav {
+        margin-top: 42px;
+        height: 104px;
+        width: 51px;
+        flex-wrap: wrap;
+        li {
+            line-height: 40px;
+        }
+    }
+    &__form {
+        margin-top: 44px;
+        display: flex;
+        flex-direction: column;
+        width: 252px;
+        height: 182px;
+        input {
+            background-color: #333;
+            border: 1px solid #4F4F4F;
+            margin-bottom: 10px;
+            resize: none;
+            &::placeholder {
+                color: #F2F2F2;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 30px;
+                letter-spacing: 0.08em;
+                text-transform: capitalize;
+            }
+        }
+        #message {
+            height: 90px;
+        }
+    }
+    &__contact {
+        background: #4F4F4F;
+        width: 252px;
+        margin-top: 4px;
+    }
+}
