@@ -2,26 +2,26 @@
     min-height: 55px;
     background: #333333;
     position: relative;
+    box-sizing: border-box;
     &__outter {
         position: fixed;
         width: 100%;
         height: 55px;
         background: #333333;
-        z-index: 2;
+        z-index: 3;
     }
     &__inner {
-        
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 5px;
+        height: 55px;
     }
     &__logo {
-        width: 110px;
-        height: 45px;
+        width: 72px;
+        height: 35px;
         img {
             max-width: 100%;
-            height: 50px;
+            height: inherit;
         }     
     }
     &__wrapper {

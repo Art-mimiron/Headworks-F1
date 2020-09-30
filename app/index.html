@@ -12,22 +12,42 @@
   <script defer src="js/scripts.min.js"></script>
 </head>
 <body>
+  <div class="status">
+    <div class="status__outter">
+      <div class="container">
+        <div class="status__inner">
+          <div class="status__bar">Status bar</div>
+          <div class="status__time">12:31</div>
+        </div>
+      </div>
+    </div>
+  </div>
   <header class="header">
     <div class="header__outter">
       <div class="container">
         <div class="header__inner">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <a href="#" class="header__logo"><img src="img/hw-logo.svg" alt="logo"></a>
           <div class="header__wrapper">
-            <ul class="header__nav">
-              <li><a href="" class="header__link">About</a></li>
-              <li><a href="" class="header__link">Drivers</a></li>
-              <li><a href="" class="header__link">Car</a></li>
+            <ul class="header__nav xs_hidden">
+              <li><a href="#about" class="header__link">About</a></li>
+              <li><a href="#drivers" class="header__link">Drivers</a></li>
+              <li><a href="#car" class="header__link">Car</a></li>
             </ul>
             <button class="header__contact">CONTACT</button>
           </div>
         </div>
       </div>
     </div>
+    <ul class="header__nav xl_hidden">
+      <li><a href="#about" class="header__link">About</a></li>
+      <li><a href="#drivers" class="header__link">Drivers</a></li>
+      <li><a href="#car" class="header__link">Car</a></li>
+    </ul>
   </header>
   <section class="promo">
     <img src="img/hw-header-background.jpg" alt="bg" class="promo__bg">
@@ -40,7 +60,7 @@
       <img src="img/hw-header-car.png" alt="car" class="promo__car">
     </div>
   </section>
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <h2 class="title title_absolute">About</h2>
       <div class="about__inner">
@@ -55,7 +75,7 @@
       </div>
     </div>
   </section>
-  <section class="drivers">
+  <section class="drivers" id="drivers">
     <h2 class="title title_line">Drivers</h2>
     <div class="container">
       <div class="drivers__card">
@@ -81,12 +101,12 @@
         <div class="drivers__photo">
           <img src="img/hw-driver-stig-1.jpg" alt="photo">
         </div>
-        <div class="drivers__info drivers__info2">
+        <div class="drivers__info">
           <div class="drivers__label">
             <div class="drivers__position">Senior racing driver</div>
             <div class="drivers__name">Jonny Figmov</div>
           </div>
-          <ul class="drivers__stats drivers__stats2">
+          <ul class="drivers__stats">
             <li>Races: <span>46</span></li>
             <li>Pole-positions: <span>0</span></li>
             <li>Podiums: <span>4</span></li>
@@ -98,7 +118,7 @@
       </div>
     </div>
   </section>
-  <section class="car">
+  <section class="car" id="car">
     <h2 class="title title_line">Car</h2>
     <div class="container">
       <div class="car__wrapper">
@@ -146,8 +166,8 @@
           <li><a href="" class="header__link footer__link">Car</a></li>
         </ul>
         <form action="#" class="footer__form">
-          <input type="email" placeholder="Email" style="color: white;" required>
-          <input type="text" id="message" placeholder="Message">
+          <input type="email" placeholder="Email" required>
+          <textarea name="message" placeholder="Message" required></textarea>
           <button class="header__contact footer__contact">contact</button>
         </form>
       </div>

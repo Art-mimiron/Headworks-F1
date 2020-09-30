@@ -1,45 +1,30 @@
 * {
     font-family: 'Titillium Web', sans-serif;
+    
 }
 
 .container {
     width: 93.75%;
     margin: 0 auto;
 }
-.title {
-    position: relative;
-    margin: 0;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 64px;
-    color: #F50A4D;
-    &_absolute {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1;
-    }
-    &_line {
-        margin-left: 36px;
-        &:before {
-            content: '';
-            display: block;
-            position: absolute;
-            width: 87.68vw;
-            height: 3px;
-            background-color: #F50A4D;
-            bottom: 14px;
-            left: 184px;
-        }
-    }
+.status {
+    display: none;
 }
-    
+.hamburger {
+    display: none;
+}
 
+    
+@import 'titles.scss';
 @import 'header.scss';
 @import 'promo.scss';
 @import 'about.scss';
 @import 'drivers.scss';
 @import 'car.scss';
-@import 'footer.scss'
+@import 'footer.scss';
+
+.xl_hidden {
+    display: none;
+}
+
+@import 'media.scss'

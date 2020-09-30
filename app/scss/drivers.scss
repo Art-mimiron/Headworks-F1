@@ -1,4 +1,6 @@
 .drivers {
+    overflow: hidden;
+    box-sizing: border-box;
     &__card {
         margin: 0 auto;
         margin-top: 120px;
@@ -8,11 +10,18 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 112px;
-        transform: translateX(-5%);
         &:nth-child(even) {
             display: flex;
             flex-direction: row-reverse;
             transform: translateX(5%);
+            .drivers__info {
+                align-items: flex-start
+            }
+            .drivers__stats {
+                li {
+                    padding-left: 0;
+                }
+            }
         }
     }
     &__photo {
@@ -29,9 +38,6 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-end;
-    }
-    &__info2 {
-        align-items: flex-start;
     }
     &__label {
         width: 183px;
@@ -75,10 +81,5 @@
         span {
             font-weight: normal;
         } 
-    }
-    &__stats2 {
-        li {
-            padding-left: 0;
-        }
     }
 }

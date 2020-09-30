@@ -1,6 +1,8 @@
 .car {
+    overflow: hidden;
     min-height: 775px;
     padding-top: 40px;
+    box-sizing: border-box;
     &__wrapper {
         display: flex;
         margin: 0 auto;
@@ -12,7 +14,7 @@
     }
     &__descr {
         position: absolute;
-        bottom: 0;
+        bottom: 3px;
         left: 0;
         padding: 18px 4px 18px 20px;
         width: 412px;

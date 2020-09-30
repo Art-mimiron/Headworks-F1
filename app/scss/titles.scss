@@ -1,0 +1,31 @@
+.title {
+    position: relative;
+    margin: 0;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+    color: #F50A4D;
+    &_absolute {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+    &_line {
+        display: inline;
+        margin-left: 36px;
+        overflow: hidden;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100vw;
+            height: 3px;
+            background-color: #F50A4D;
+            bottom: 19px;
+            left: 137%;
+        }
+    }
+}
